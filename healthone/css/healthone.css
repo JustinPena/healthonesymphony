@@ -1,0 +1,19 @@
+body {
+    background-color: gainsboro;
+}
+
+.container {
+    background-color: white;
+}
+
+.header-row {
+    margin-top: 28px;
+}
+
+.banner-img {
+    margin-bottom: 28px;
+}
+
+.product-img {
+    width: 70%;
+}
