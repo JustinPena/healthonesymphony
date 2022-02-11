@@ -1,9 +1,10 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Healthone | Product{% endblock %}
+{% block title %}Healthone | Product
+{% endblock %}
 
 {% block body %}
-    <div class="container" xmlns="http://www.w3.org/1999/html">
+<div class="container" xmlns="http://www.w3.org/1999/html">
     <header>
         <div class="header-row lead">
             <h1 class="display-3">Health<span class="text-danger">One</span></h1>
@@ -40,27 +41,9 @@
     <figure>
         <img alt="banner" class="img-fluid banner-img" src={{ asset('img/healthone-wide.png') }} />
     </figure>
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{ path('homepage') }}">Home</a></li>
-            <li class="breadcrumb-item"><a href="{{ path('categories') }}">Categories</a></li>
-            <li class="breadcrumb-item active" aria-current="page">{{ category.name }}</li>
-        </ol>
-    </nav>
-    <div class="row gy-3 ">
-        {%  for product in category.products %}
-            <div class="col-sm-4 col-md-3 col-lg-2 align-items-center">
-                <div class="card mb-4">
-                    <div class="card-body text-center">
-                        <a href="{{ path('product', {'id':product.id}) }}">
-                            <img alt="no picture" class="product-img img-responsive center-block" src="{{ asset(product.picture) }}"/>
-                        </a>
-                        <div class="card-title mb-3"> {{ product.name }}</div>
-                    </div>
-                </div>
-            </div>
-        {% endfor %}
-    </div>
+
+
+
     <footer>
         <i class="bi bi-linkedin float-right img-thumbnail" ></i>
         <i class="bi bi-twitter float-right img-thumbnail" ></i>
@@ -68,4 +51,5 @@
 
         <p class="clear pb-3 text-muted text-center">@Afdeling software development Tinwerf 10, 2544 ED Den Haag. </p>
     </footer>
+</div>
 {% endblock %}
